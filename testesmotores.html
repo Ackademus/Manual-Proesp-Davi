@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testes Motores — PROESP-Br</title>
+
+  <link rel="stylesheet" href="estilodapagina.css">
+  <script defer src="programacao.js"></script>
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <h1>Coleta PROESP-Br</h1>
+      <p class="subtitle">Etapa 3 — Testes Motores</p>
+    </header>
+
+    <form id="motoresForm" novalidate>
+
+      <fieldset>
+        <legend>Testes Motores</legend>
+
+        <div class="group">
+          <label for="handgrip">Handgrip (kg)</label>
+          <input type="number" id="handgrip" name="handgrip" min="0" max="200">
+          <div class="msg"></div>
+        </div>
+
+        <div class="group">
+          <label for="sentadilha">Sentadilha (repetições)</label>
+          <input type="number" id="sentadilha" name="sentadilha" min="0" max="200">
+          <div class="msg"></div>
+        </div>
+
+        <div class="group">
+          <label for="run10m">Corrida 10m (s)</label>
+          <input type="number" id="run10m" name="run10m" min="0" max="30" step="0.01">
+          <div class="msg"></div>
+        </div>
+
+        <div class="group">
+          <label for="agilidade">Agilidade (s)</label>
+          <input type="number" id="agilidade" name="agilidade" min="0" max="60" step="0.01">
+          <div class="msg"></div>
+        </div>
+
+      </fieldset>
+
+      <footer class="actions">
+        <a class="btn btn-secondary" href="antropometria.html">Voltar</a>
+        <button class="btn btn-primary">Finalizar</button>
+      </footer>
+
+    </form>
+
+    <div id="globalFeedback" class="global-feedback"></div>
+
+  </main>
+</body>
+</html>
+

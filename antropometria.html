@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antropometria — PROESP-Br</title>
+
+  <link rel="stylesheet" href="estilodapagina.css">
+  <script defer src="programacao.js"></script>
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <h1>Coleta PROESP-Br</h1>
+      <p class="subtitle">Etapa 2 — Antropometria</p>
+    </header>
+
+    <form id="antropometriaForm" novalidate>
+
+      <fieldset>
+        <legend>Antropometria</legend>
+
+        <div class="group">
+          <label for="altura">Altura (cm)</label>
+          <input type="number" id="altura" name="altura" required min="50" max="250">
+          <div class="msg"></div>
+        </div>
+
+        <div class="group">
+          <label for="peso">Peso (kg)</label>
+          <input type="number" id="peso" name="peso" required min="10" max="300">
+          <div class="msg"></div>
+        </div>
+
+        <div class="group">
+          <label for="envergadura">Envergadura (cm)</label>
+          <input type="number" id="envergadura" name="envergadura" min="30" max="300">
+          <div class="msg"></div>
+        </div>
+
+      </fieldset>
+
+      <footer class="actions">
+        <a class="btn btn-secondary" href="index.html">Voltar</a>
+        <button class="btn btn-primary">Próximo</button>
+      </footer>
+
+    </form>
+
+    <div id="globalFeedback" class="global-feedback"></div>
+
+  </main>
+</body>
+</html>
