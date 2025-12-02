@@ -160,7 +160,7 @@ Botão “Finalizar” → alerta de conclusão
 
 Baixe ou clone o repositório:
 
-git clone https://github.com/SEU-USUARIO/Proesp-coleta.git
+git clone https://github.com/Ackademus/Proesp-coleta.git
 
 
 Abra a pasta no VS Code
